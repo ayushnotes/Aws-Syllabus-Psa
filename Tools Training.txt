@@ -1,0 +1,27 @@
+10-videos
+04/09- Kubernate start overview
+04/08- loggers continue... 
+04/07-loggers implementation
+04/03- jenkins continue..
+04/02-  jenkins 
+04/01-Spring boot code to deploy using docker. imp
+03/28-How to create docker file? Create Docker Image? push that to docker hub?
+03/26-port mapping 
+03/25-Install Docker and Run docker Commands to pull images and run. 
+03/24-docker overview
+03/12-
+03/11-
+
+sudo yum update -y
+sudo yum install -y docker
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo usermod -aG docker ec2-user
+newgrp docker
+
+
+FROM openjdk:17
+RUN echo 'run-1'
+RUN echo 'run-2'
+CMD echo 'cmd-1'
+CMD echo 'cmd-2'
