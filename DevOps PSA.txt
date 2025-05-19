@@ -1,0 +1,52 @@
+04/02 - ansile webserver to display content in chrome.
+04/01 - ansible playbooks.
+03/28 - ansible/control node -> node1, node2.make connection between this node.
+03/26 - ansible connection
+03/25 - Configuration Management/Ansible-Overview theory.
+03/24 - Terraform infrastructure creation/ state file creation/ download mobaxtreme
+03/19 - Terraform / Workspace-example folder.
+03/18 - Terraform / Infrastructure creations./
+03/17 - Terraform /  some codes Terraform project folder. 
+03/13 - Terraform Output Variable./ some codes  tcs folder.
+03/11 - Terraform practical simple/  Input variables.
+03/07 - Terraform practical creating instances.Architecture
+03/06 - Terraform explanation theory.
+03/05 - Cloud Infrastructure-old technology
+03/03 - Network ACLs(NACL), EFS/NFS. nfs install, mounting command.
+02/28 - VPC Peering.
+02/27 - VPC Practical-subnets,route tables, internate gate ways.
+02/26 - VPC Overwiew detailed theory.
+02/25 - Deploy springboot app using EBS. VPC
+02/20 - Elastic Bean Stalk.
+roles:
+AWSElasticBeanstalkMulticontainerDocker
+AWSElasticBeanstalkWebTier
+AWSElasticBeanstalkWorkerTier
+02/19 - CLOUD WATCH & SNS(revision done after 30 mins in the video)
+02/18 - AWS CLI IMPLEMENTED
+02/17 - AWS CLI
+02/14 - IAM (imp)
+02/13 - Accelarated Transfer, IAM,MFA
+02/12 - S3 (SERVICES)
+02/10 - RDS (RELATIONAL DATABASE SERVICE)
+02/08 - AUTO SCALING
+02/06 - LOAD BALANCER WITH MICRO SERVICES
+02/04 - LOAD BALANCER
+02/03 - SnapShots
+01/31 - EBS 
+01/29 - PRIVATE,PUBLIC,ELASTIC IP, GENERATE WINDOWS AND LINUX OS / Security Groups. 
+01/28 - OVERVIEW OF EC2 INSTANCE
+
+
+#!/bin/bash
+sudo yum install -y httpd
+sudo systemctl enable httpd
+sudo systemctl start httpd
+
+echo "<html><body><h1>Welcome to My Static Website One!</h1></body></html>" | sudo tee /var/www/html/index.html > /dev/null
+
+
+	[webservers]
+	172.31.8.5
+	[dbservers]
+	172.31.4.172
